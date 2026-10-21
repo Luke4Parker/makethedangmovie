@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Distribution — makethedangmovie</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,700;9..144,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="distribution">
+<main class="wrap">
+  <section class="hero">
+    <div class="eyebrow">Distribution</div>
+    <h1>Get your movie seen.</h1>
+    <p>Movie distribution on makethedangmovie is provided by <strong>janice.click</strong>. Finish your film here, then take it to your audience.</p>
+    <p><a class="btn" href="https://janice.click" target="_blank" rel="noopener">Go to janice.click</a></p>
+  </section>
+
+  <section class="block">
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li><strong>Log your film.</strong> Save the basics below so you have them ready.</li>
+      <li><strong>Continue at janice.click.</strong> Distribution is handled there, so terms, delivery, and availability are set by janice.click.</li>
+      <li><strong>Track it here.</strong> Your saved titles stay on this device for reference.</li>
+    </ol>
+  </section>
+
+  <section class="block">
+    <h2>Log a film</h2>
+    <div class="panel">
+      <form id="dist-form" class="post">
+        <label>Title<input name="title" required></label>
+        <label>Genre<select name="genre"><option>Drama</option><option>Comedy</option><option>Action</option><option>Horror</option><option>Thriller</option><option>Documentary</option></select></label>
+        <label>Runtime (minutes)<input name="runtime" type="number" min="1" required></label>
+        <label>Status<select name="status"><option>In production</option><option>Post-production</option><option>Ready for distribution</option></select></label>
+        <div class="full"><button class="btn">Save film</button> <span class="note">Saved on this device only. Submitting to janice.click happens on their site.</span></div>
+      </form>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>Your films</h2>
+    <div id="submissions" class="grid"></div>
+  </section>
+</main>
+<script src="js/app.js"></script>
+</body>
+</html>

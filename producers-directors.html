@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Producers ↔ Directors — makethedangmovie</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,700;9..144,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="producers">
+<main class="wrap">
+  <section class="hero" style="padding-bottom:8px">
+    <div class="eyebrow">Financing &amp; packaging</div>
+    <h1>Producers meet directors.</h1>
+    <p>Directors with a vision, producers with the means. Match by genre and budget.</p>
+    <div class="tabs">
+      <button class="tab on" data-tab="producer">Producers</button>
+      <button class="tab" data-tab="director">Directors</button>
+    </div>
+  </section>
+
+  <div class="bar">
+    <input id="q" type="search" placeholder="Search name, location, keywords…" aria-label="Search">
+    <select data-filter="genre" aria-label="Genre">
+      <option value="">All genres</option>
+      <option>Drama</option><option>Comedy</option><option>Thriller</option><option>Horror</option>
+    </select>
+    <select data-filter="budget" aria-label="Budget">
+      <option value="">Any budget</option>
+      <option>Under $500K</option><option>$500K–$2M</option><option>$2M+</option>
+    </select>
+    <span id="count" class="note"></span>
+  </div>
+  <div id="list" class="grid"></div>
+
+  <section class="block">
+    <h2>Add your profile</h2>
+    <div class="panel">
+      <form id="post-form" class="post">
+        <label>Name<input name="name" required></label>
+        <label>I am a…<select name="kind"><option value="producer">Producer</option><option value="director">Director</option></select></label>
+        <label>Location<input name="location" required placeholder="City, ST"></label>
+        <label>Genre<select name="genre"><option>Drama</option><option>Comedy</option><option>Thriller</option><option>Horror</option></select></label>
+        <label>Budget range<select name="budget"><option>Under $500K</option><option>$500K–$2M</option><option>$2M+</option></select></label>
+        <label class="full">About / track record<textarea name="bio" rows="3" required></textarea></label>
+        <label class="full">Looking for<input name="looking" required placeholder="What do you want from a partner?"></label>
+        <div class="full"><button class="btn">Post profile</button> <span class="note">Saved on this device (demo mode).</span></div>
+      </form>
+    </div>
+  </section>
+</main>
+<script src="js/app.js"></script>
+</body>
+</html>

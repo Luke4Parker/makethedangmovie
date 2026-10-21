@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gear Marketplace — makethedangmovie</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,700;9..144,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="market">
+<main class="wrap">
+  <section class="hero" style="padding-bottom:8px">
+    <div class="eyebrow">Equipment</div>
+    <h1>Gear marketplace.</h1>
+    <p>Rent or buy cameras, lenses, lighting, audio and grip from filmmakers near you.</p>
+  </section>
+
+  <div class="bar">
+    <input id="q" type="search" placeholder="Search gear, city…" aria-label="Search">
+    <select data-filter="category" aria-label="Category">
+      <option value="">All categories</option>
+      <option>Cameras</option><option>Lenses</option><option>Lighting</option><option>Audio</option><option>Grip</option>
+    </select>
+    <select data-filter="mode" aria-label="Rent or sale">
+      <option value="">Rent &amp; sale</option>
+      <option>Rent</option><option>Sale</option>
+    </select>
+    <span id="count" class="note"></span>
+  </div>
+  <div id="list" class="grid"></div>
+
+  <section class="block">
+    <h2>List your gear</h2>
+    <div class="panel">
+      <form id="post-form" class="post">
+        <label>Item<input name="title" required></label>
+        <label>Category<select name="category"><option>Cameras</option><option>Lenses</option><option>Lighting</option><option>Audio</option><option>Grip</option></select></label>
+        <label>Rent or sale<select name="mode"><option>Rent</option><option>Sale</option></select></label>
+        <label>Price<input name="price" required placeholder="$100/day or $500"></label>
+        <label>Location<input name="location" required placeholder="City, ST"></label>
+        <label class="full">Description<textarea name="description" rows="3" required></textarea></label>
+        <div class="full"><button class="btn">Post listing</button> <span class="note">Saved on this device (demo mode). Payments are not handled on this site yet.</span></div>
+      </form>
+    </div>
+  </section>
+</main>
+<script src="js/app.js"></script>
+</body>
+</html>
